@@ -1,11 +1,8 @@
 function throwDice() {
 
-  // Set the random variable
-  var random = Math.floor(Math.random() * 6 + 1);
-
-  // This code looks useless, but I need two separate variables for the comparison
-  var number1 = random;
-  var number2 = random;
+  // I need two separate variables for the comparison
+  var number1 = Math.floor(Math.random() * 6 + 1);
+  var number2 = Math.floor(Math.random() * 6 + 1);
 
   // Query selector for the h1, so I avoid typing it three times in the comparison output
   var title = document.querySelector(".container h1");
